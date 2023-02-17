@@ -1,0 +1,68 @@
+.form-row {
+  //@extend .m-b-s;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  & > * {
+    flex: 1;
+  }
+
+  @include mobile {
+    flex-direction: column;
+  }
+}
+
+.form-col {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+
+// The code below cannot be nested since it's used to overwrite
+// library styles (library classes extend these classes).
+.field-label {
+  @extend .m-b-xxs;
+
+  display: inline-block;
+  font-size: 0.85rem;
+}
+
+.error-message {
+  @extend .m-t-xs;
+
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.72rem;
+  color: $red;
+
+  img {
+    fill: $red;
+    width: 14px;
+  }
+}
+
+.success-message {
+  @extend .m-t-xxs;
+
+  display: inline-block;
+  font-size: 0.85rem;
+  color: $green;
+}
+
+.additional-field-text {
+  @extend .m-t-xxs;
+
+  display: block;
+  color: $light-gray;
+  font-size: 0.85rem;
+}
+
+.mandatory {
+  color: $red;
+}
+
+.wpwl-form-card {
+  margin: 0;
+}

@@ -1,0 +1,146 @@
+.btn {
+    @extend .interactive;
+    @extend .p-h-s;
+    @extend .flex-center;
+    // This was added additionally.
+    @extend .limited-text;
+
+    display: inline-flex;
+    height: $button-height;
+    background-color: $black;
+    color: $white;
+    text-align: center;
+    border-radius: $border-radius-m;
+    overflow: hidden;
+    cursor: pointer;
+    outline: none;
+    font-weight: 600;
+    font-size: 0.85rem;
+    border: 2px solid $black;
+    text-decoration: none;
+
+    span {
+        color: inherit;
+    }
+
+    &.rounded {
+        border-radius: calc($button-height / 2);
+    }
+
+    &.primary {
+        background-color: $primary;
+        border-color: $primary;
+
+        &.negative {
+            color: $primary!important;
+            
+        }
+    }
+
+    &.orange {
+        background-color: $orange;
+        border-color: $orange;
+
+        &.negative {
+            color: $orange;
+        }
+    }
+
+    &.blue {
+        background-color: $blue;
+        border-color: $blue;
+
+        &.negative {
+            color: $blue;
+        }
+    }
+
+    &.red {
+        background-color: $red;
+        border-color: $red;
+
+        &.negative {
+            color: $red;
+        }
+    }
+
+    &.green {
+        background-color: $green;
+        border-color: $green;
+
+        &.negative {
+            color: $green;
+        }
+    }
+
+    &.gray {
+        background-color: $gray;
+        border-color: $gray;
+
+        &.negative {
+            color: $gray;
+        }
+    }
+
+    &.light-gray {
+        background-color: $light-gray;
+        border-color: $light-gray;
+
+        &.negative {
+            color: $light-gray;
+        }
+    }
+
+    &.cream-white {
+        background-color: $cream-white;
+        border-color: $cream-white;
+
+        &.negative {
+            color: $cream-white;
+        }
+    }
+
+    &.white {
+        background-color: $white;
+        border-color: $white;
+        color: $text-color;
+
+        &.negative {
+            color: $white;
+        }
+    }
+
+    &.negative {
+        color: $black;
+        background: transparent;
+    }
+
+    &:disabled,
+    &[disabled] {
+        opacity: 0.3;
+        transition: none;
+        user-select: none;
+        cursor: initial;
+    }
+    
+    &.disabled {
+        opacity: 0.3;
+        transition: none;
+        user-select: none;
+        cursor: initial;
+        pointer-events: none;// This is added in order to disable events through CSS.
+    }
+}
+
+.full-width-button {
+    .btn {
+        width: 100%;
+    }
+}
+
+.badge-button {
+    .btn {
+        min-width: 0;
+        width: $button-height;
+    }
+}

@@ -1,0 +1,71 @@
+// Abstract class to define shared styles.
+.input-field {
+    @extend .background-transition;
+    @extend .p-h-xs;
+
+    position: relative;
+    border-radius: $border-radius-m;
+    background-color: transparent;
+    border: 1px solid $light-gray;
+    outline: none;
+    width: 100%;
+    font-family: $font-family;
+
+    &:focus {
+        border: 2px solid $gray;
+    }
+}
+
+.error-shown {
+    .input-field {
+        background-color: transparentize($red, 0.9);
+        border-color: $red;
+    }
+}
+
+.text-field,
+.dropdown-field {
+    @extend .input-field;
+
+    height: $input-height;
+}
+
+.text-field {
+    @extend .p-t-xs;
+}
+
+.textarea-field {
+    @extend .input-field;
+    @extend .p-b-s;
+    @extend .p-h-xs;
+
+    padding-top: calc($space-s + 5px);
+    width: 100% !important;
+    min-height: 160px !important;
+    max-height: 800px !important;
+    font-family: $font-family;
+}
+
+
+// The code below cannot be nested since it's used to overwrite
+// library styles (library classes extend these classes).
+.field-label {
+    transition: all $transition-duration ease-in-out;
+    position: absolute;
+    left: $space-xs;
+    top: 18px;
+}
+
+.labeled-field-container {
+    position: relative;
+
+    input[type="date"]+.field-label,
+    input:valid+.field-label,
+    textarea:valid+.field-label,
+
+    input:focus+.field-label,
+    textarea:focus+.field-label {
+        top: $space-xxs;
+        font-size: 0.72rem;
+    }
+}

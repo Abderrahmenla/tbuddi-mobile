@@ -1,0 +1,27 @@
+.split-page {
+    .split-page-video-container {
+        position: relative;
+        height: 100vh;
+        overflow: hidden;
+
+        video {
+            position: absolute;
+            height: 100vh;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    .split-page-content-container {
+        @extend .flex-centered-column;
+
+        display: inline-flex;
+        height: 100vh;
+    }
+}
+
+@include mobile {
+    .split-page-video-container {
+        display: none;
+    }
+}

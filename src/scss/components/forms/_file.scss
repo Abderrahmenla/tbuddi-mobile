@@ -1,0 +1,39 @@
+.image-picker {
+    display: inline-flex;
+    position: relative;
+    width: 100%;
+    max-width: 220px;
+    height: 240px;
+    border-radius: $border-radius-s;
+    background-color: $light-gray;
+    overflow: hidden;
+
+    .image-label {
+        @extend .interactive;
+        @extend .standard-background-image;
+        @extend .flex-center;
+
+        height: 100%;
+        width: 100%;
+        cursor: pointer;
+
+        .plus {
+            width: 36px;
+        }
+
+        input {
+            display: none;
+        }
+    }
+
+    .close {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        background: $primary;
+        cursor: pointer;
+    }
+}

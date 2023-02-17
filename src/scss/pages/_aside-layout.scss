@@ -1,0 +1,200 @@
+.aside-layout-header {
+    @extend .flex-distributed-row;
+    @extend .p-h-s;
+
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 100px;
+    min-width: 360px;
+    background-color: $white;
+    border-bottom: 1px solid $light-gray;
+    z-index: 1001;
+
+    .logo-container {
+        @extend .m-l-s;
+
+        margin-right: auto;
+        max-width: 120px;
+    }
+
+    .logo {
+        width: 90%;
+    }
+
+    .profile-menu-container {
+        position: relative;
+        padding: 10px;
+        cursor: pointer;
+
+        .profile-menu {
+            display: none;
+            position: absolute;
+            top: 70px;
+            right: 0;
+            white-space: nowrap;
+            width: 300px;
+
+            a {
+                @extend .m-b-xs;
+                @extend .interactive;
+
+                display: block;
+                height: 20px;
+                line-height: 20px;
+                text-align: right;
+                text-decoration: none;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        &:hover {
+            .profile-menu {
+                display: block;
+            }
+        }
+    }
+}
+
+.aside-layout-menu {
+    @extend .p-s;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    position: fixed;
+    top: 100px;
+    left: 0;
+    bottom: 0;
+    background-color: $cream-white;
+    border-right: 1px solid $light-gray;
+    z-index: 1001;
+}
+
+.aside-layout-main {
+    @extend .p-b-l;
+
+    margin-top: 100px;
+    z-index: 1000;
+}
+
+/* Position and sizing of burger button */
+.bm-burger-button {
+    display: none;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+    background: #373a47;
+}
+
+/* Color/shape of burger icon bars on hover*/
+.bm-burger-bars-hover {
+    background: #a90000;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+    display: none;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+    background: #bdc3c7;
+}
+
+/*
+  Sidebar wrapper styles
+  Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+  */
+.bm-menu-wrap {
+    position: fixed;
+    height: 100%;
+    top: 100px;
+}
+
+/* General sidebar styles */
+.bm-menu {
+    width: 100% !important;
+    height: calc(100vh - 100px) !important;
+    background: #484848;
+    padding: 2.5em 1.5em 0;
+    font-size: 1.15em;
+    white-space: initial !important;
+    overflow-y: auto !important;
+
+    & > nav {
+        height: auto !important;
+    }
+
+    .property-slide {
+        @extend .card;
+
+        width: 100%;
+        padding: 0;
+
+        & > div {
+            @extend .standard-background-image;
+
+            width: 100%;
+            height: 150px;
+            //background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.thewowstyle.com%2Fwp-content%2Fuploads%2F2015%2F02%2Fbeautiful-beach-house-wallpapers-florida-beach-huts.jpg&f=1&nofb=1&ipt=4741c3c12299c111a58dca5139524d8562ee51e3456d50cab920b79f9129bf5b&ipo=images");
+        }
+    }
+
+    h4 {
+        font-weight: 800;
+    }
+
+    * {
+        outline: none !important;
+    }
+}
+
+.main-nav-link {
+    @extend .m-b-xs;
+
+    display: block;
+    color: $white !important;
+    text-decoration: none;
+    font-size: 1rem !important;
+}
+
+.sign-out-btn {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        @extend .m-l-xs;
+
+        width: 9px;
+    }
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+    fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+    color: #b8b7ad;
+    padding: 0.8em;
+}
+
+/* Individual item */
+.bm-item {
+    display: inline-block;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+    background: rgba(0, 0, 0, 0.3);
+    top: 100px;
+}

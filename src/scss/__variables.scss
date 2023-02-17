@@ -1,0 +1,89 @@
+// Breakpoints
+$desktop: 1200px;
+$tablet: 992px;
+$mobile: 768px;
+
+// Spacing
+$space-xxs: 5px;
+$space-xs: 10px;
+$space-s: 20px;
+$space-m: 40px;
+$space-l: 60px;
+$space-xl: 80px;
+$space-xxl: 100px;
+
+// Colors
+$black: #000;
+$gray: #353434;
+$light-gray: #c7c7c7;
+$cream-white: #f7f8f8;
+$white: #fff;
+
+$blue: #10abe2;
+$red: #db4437;
+$green: #00A699;
+$yellow: #eabb53;
+$orange: #ff4d01;
+
+$rausch: #FF5A5F;
+
+// Gradients
+$purple-gradient: linear-gradient(90deg, #d12378, #4e2f91, #d12378);
+
+
+// Theme colors
+$primary: $rausch;
+$secondary: $gray;
+$tertiary: $blue;
+$quaternary: $white;
+$text-color: $gray;
+$border-color: #ddd;
+
+// Typography
+$font-family: "Montserrat", -apple-system, "BlinkMacSystemFont", "Roboto", "Helvetica Neue", sans-serif;
+$letter-spacing-m: 0.5px;
+$component-font-rem: 0.85rem;
+$text-font-rem: 0.95rem;
+$font-size-mobile: 18px;
+$font-size-tablet: 17px;
+$font-size-desktop: 16px;
+
+// Transitions
+$transition-duration: 0.2s;
+
+// Border radius
+$border-radius-s: 6px;
+$border-radius-m: 8px;
+
+// Shadows
+$shadow-s: 0px 3px 5px 5px rgba(0, 0, 0, 0.1);
+$shadow-m: 0px 5px 15px 5px rgba(0, 0, 0, 0.2);
+
+// Body
+$body-min-width: 300px;
+
+// Modal
+$modal-width: 600px;
+
+// Header
+$header-height: 110px;
+
+// Aside
+$aside-width: 240px;
+$aside-link-height: 60px;
+
+// Input
+$input-height: 56px;
+
+// Textarea
+$textarea-min-height: 100px;
+$textarea-max-height: 600px;
+
+// Button
+$button-height: 48px;
+
+// Radio and Checkbox
+$toggle-button-outer-size: 26px;
+$toggle-button-inner-offset: 7px;
+$toggle-button-border-width: 1px;
+$toggle-button-inner-size: $toggle-button-outer-size - 2 * ($toggle-button-inner-offset + $toggle-button-border-width);

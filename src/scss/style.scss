@@ -1,0 +1,48 @@
+@import "./_variables";
+@import "./_animations";
+@import "./components/typography/fonts/_fonts";
+@import "./utils/_mixins";
+@import "./utils/_helpers";
+@import "./utils/_layout";
+@import "./utils/_reset";
+
+// Forms components
+@import "./components/forms/_button";
+@import "./components/forms/_checkbox";
+@import "./components/forms/_dropdown";
+@import "./components/forms/_form";
+@import "./components/forms/_file";
+@import "./components/forms/_input";
+@import "./components/forms/_radio";
+
+// Typography components
+@import "./components/typography/_heading";
+@import "./components/typography/_link";
+@import "./components/typography/_paragraph";
+@import "./components/typography/_span";
+
+// General components
+@import "./components/_scrollbar";
+@import "./components/_modal";
+@import "./components/_split-page";
+@import "./components/_crud-table";
+@import "./components/_burger-menu-icon";
+@import "./components/_pagination";
+@import "./components/_splash";
+
+// Pages
+@import "./pages/_aside-layout";
+@import "./pages/_account";
+@import "./pages/_qr-code";
+
+@include tablet {
+    html {
+        font-size: $font-size-tablet;
+    }
+}
+
+@include desktop {
+    html {
+        font-size: $font-size-desktop;
+    }
+}
