@@ -28,6 +28,9 @@
 }
 
 @include mobile {
+    html,body {
+        height: 100vh;
+    }
     .mobile-content {
         display: initial;
     }
@@ -54,26 +57,6 @@
         display: none !important;
     }
 }
-
-@include desktop {
-    body {
-        font-size: 16px;
-        height: 100vh;
-    }
-
-    .mobile-content {
-        display: none !important;
-    }
-
-    .desktop-and-tablet-content {
-        display: initial;
-    }
-
-    .desktop-content {
-        display: initial;
-    }
-}
-
 // Shadows
 .shadow {
     -webkit-box-shadow: $shadow-m;

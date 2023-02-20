@@ -51,16 +51,15 @@ function App() {
                 <h1>Mobile version is the only supported screen</h1>
             </div>
         )
-    } else {
-        if (showSplash) {
-            return <Splash setShowSplash={setShowSplash} />
-        }
-        return (
-            <React.Suspense fallback={null}>
-                {localStorage.getItem(config.LOCAL_STORAGE_TOKEN_KEY) ? <AuthenticatedApp /> : <UnAuthenticatedApp />}
-            </React.Suspense>
-        )
     }
+    if (showSplash) {
+        return <Splash setShowSplash={setShowSplash} />
+    }
+    return (
+        <React.Suspense fallback={null}>
+            {localStorage.getItem(config.LOCAL_STORAGE_TOKEN_KEY) ? <AuthenticatedApp /> : <UnAuthenticatedApp />}
+        </React.Suspense>
+    )
 }
 
 export default App

@@ -6,7 +6,6 @@ export default function Splash(props: SplashComponentProps) {
     useEffect(() => {
         const timer = setTimeout(() => {
             props.setShowSplash(false)
-            console.log("this is after ")
         }, 2000)
         return () => clearTimeout(timer)
     }, [])

@@ -1,12 +1,14 @@
 import React, { memo } from "react"
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom"
 const BaseApp = React.lazy(() => import("./base-app"))
+const Profile = React.lazy(() => import("./pages/profile"))
 
 function AuthenticatedApp() {
     return (
         <React.Suspense fallback={null}>
             <BrowserRouter>
                 <Routes>
+                    <Route path='/profile' element={<Profile />} />
                     <Route
                         path='/500'
                         element={
