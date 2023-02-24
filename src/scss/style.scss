@@ -21,6 +21,9 @@
 @import "./components/typography/_paragraph";
 @import "./components/typography/_span";
 
+// Elements components
+@import "./components/elements/_button";
+
 // General components
 @import "./components/_scrollbar";
 @import "./components/_modal";
@@ -29,6 +32,8 @@
 @import "./components/_burger-menu-icon";
 @import "./components/_pagination";
 @import "./components/_splash";
+@import "./components/_item-card";
+@import "./components/_tour-card";
 
 // Pages
 @import "./pages/_aside-layout";

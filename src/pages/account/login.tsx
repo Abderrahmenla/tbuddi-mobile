@@ -43,10 +43,6 @@ function Login() {
     return (
         <div className='split-page'>
             <div className='split-page-video-container col-6 col-t-4 col-m-12'>
-                <video autoPlay muted loop>
-                    <source src='/videos/balloons.mp4' type='video/mp4' />
-                    Your browser does not support the video tag.
-                </video>
             </div>
 
             <div className='split-page-content-container col-6 col-t-8 col-m-12 p-m'>
