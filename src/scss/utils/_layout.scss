@@ -212,6 +212,7 @@ $grid__cols: 12;
             width: calc(100vw / 4);
             z-index: 100000000;
             transition: all 0.2s linear;
+            border-color: transparent;
             &::before {
                 content: "";
                 position: absolute;
@@ -253,7 +254,7 @@ $grid__cols: 12;
     }
 }
 .header {
-    background: #FF5A5F;
+    background: $rausch;
     border-radius: 3px;
     overflow: hidden;
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);

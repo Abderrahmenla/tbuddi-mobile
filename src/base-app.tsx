@@ -8,10 +8,10 @@ import Services from "./screens/services"
 
 import Header from "./layouts/navigation/header"
 
-import MarketplaceIcon from "./components/UI/icons/marketplace"
-import ServicesIcon from "./components/UI/icons/services"
-import ToursIcon from "./components/UI/icons/tours"
-import ProfileIcon from "./components/UI/icons/profile"
+import MarketplaceIcon from "./components/ui/icons/marketplace"
+import ServicesIcon from "./components/ui/icons/services"
+import ToursIcon from "./components/ui/icons/tours"
+import ProfileIcon from "./components/ui/icons/profile"
 
 function BaseApp() {
     const [active, setActive] = useState(0)

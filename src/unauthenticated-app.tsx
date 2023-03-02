@@ -6,6 +6,7 @@ const ForgetPassword = lazy(() => import("./pages/account/forget-password"))
 const Login = lazy(() => import("./pages/account/login"))
 const Register = lazy(() => import("./pages/account/register"))
 const BaseApp = lazy(() => import("./base-app"))
+const EmailConfirmation = lazy(() => import("./pages/account/email-confirmation"))
 
 function UnAuthenticatedApp() {
     return (
@@ -14,6 +15,7 @@ function UnAuthenticatedApp() {
                 <Route path='/login' element={<BaseApp />} />
                 <Route path='/register' element={<Register />} />
                 <Route path='/account/reset/finish' element={<ResetPassword />} />
+                <Route path='/email-confirmation' element={<EmailConfirmation />} />
                 <Route path='/forgot-password' element={<ForgetPassword />} />
                 <Route path='*' element={<Navigate to='/login' />} />
             </Routes>

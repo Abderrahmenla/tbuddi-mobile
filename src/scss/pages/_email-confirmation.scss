@@ -1,0 +1,30 @@
+.wrapper{
+  display : flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 50;
+}
+.row{
+  display: flex;
+  align-items: center;
+}
+
+.button {
+	padding: 15px;
+	font-size: 18px;
+	color: white;
+	background-color: $rausch;
+	border: 0;
+	border-radius: 5px;
+	margin: 10px;
+	display: block;
+	max-width: 200px;
+	margin: auto;
+	text-decoration: none;
+  a{
+    text-decoration: none;
+    color: white
+  }
+}
