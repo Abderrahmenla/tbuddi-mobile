@@ -8,8 +8,8 @@ const config = {
     MARKETPLACE_CATEGORY_NAME: "Marketplace",
     SERVICES_CATEGORY_NAME: "Services",
     TOURS_CATEGORY_NAME: "Tours",
-    QR_CODE_URL_PREFIX: window.location.host + "/",// TODO: Put actual value.
-    STRIPE_KEY: "pk_test_51MCrHCErTQW8tQahu6XkqCiR4Kb2EPM02JB2d73LVdnt133s6ZSlB8WUBFP0nHgU5IdJAKJSIvgGoRoVyZHlluhs00QKUsiz7E",
+    STRIPE_KEY:
+        "pk_test_51MCrHCErTQW8tQahu6XkqCiR4Kb2EPM02JB2d73LVdnt133s6ZSlB8WUBFP0nHgU5IdJAKJSIvgGoRoVyZHlluhs00QKUsiz7E",
 }
 
 export default config

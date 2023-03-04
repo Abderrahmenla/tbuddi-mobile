@@ -12,7 +12,8 @@ function UnAuthenticatedApp() {
     return (
         <BrowserRouter>
             <Routes>
-                <Route path='/login' element={<BaseApp />} />
+                <Route path='/' element={<BaseApp />} />
+                <Route path='/login' element={<Login />} />
                 <Route path='/register' element={<Register />} />
                 <Route path='/account/reset/finish' element={<ResetPassword />} />
                 <Route path='/email-confirmation' element={<EmailConfirmation />} />

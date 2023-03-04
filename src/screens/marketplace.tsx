@@ -27,10 +27,10 @@ export default function Marketplace() {
         },
     ]
     return (
-        <div>
+        <section>
             {items.map((item, index) => (
                 <ProductCard key={index} {...item} />
             ))}
-        </div>
+        </section>
     )
 }

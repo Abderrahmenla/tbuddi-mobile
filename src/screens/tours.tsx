@@ -59,10 +59,10 @@ export default function Tours() {
         },
     ]
     return (
-        <div>
+        <section>
             {tours.map((tour, index) => (
                 <TourCard key={index} {...tour} />
             ))}
-        </div>
+        </section>
     )
 }

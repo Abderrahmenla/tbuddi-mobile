@@ -19,7 +19,7 @@ function BaseApp() {
         { Icon: MarketplaceIcon, Screen: Marketplace },
         { Icon: ServicesIcon, Screen: Services },
         { Icon: ToursIcon, Screen: Tours },
-        { Icon: ProfileIcon, Screen: () => <Navigate to='/register' /> },
+        { Icon: ProfileIcon, Screen: () => <Navigate to='/profile' /> },
     ]
     useEffect(() => {
         const navPointer = document.querySelector(".bottom-nav .pointer")
